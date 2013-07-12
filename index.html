@@ -3,7 +3,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-      var socket = io.connect('http://localhost');
+      var socket = io.connect('http://localhost:5000');
       socket.on('news', function (data) {
         console.log(data);
         $('#mySpan').text(data.hello);
